@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТикТок видеа</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="works.html">Портфолио</a>
+        <a href="contacts.html">Контакти</a>
+    </nav>
+
+
+    <section class="video-gallery">
+        <h2>My TikTok Videos</h2>
+        <div class="videos">
+            <video src="spas.mp4" class="video" muted loop></video>
+            <video src="moral.mp4" class="video" muted loop></video>
+            <video src="benzin.mp4" class="video" muted loop></video>
+            <video src="novinite.mp4" class="video" muted loop></video>
+            <video src="generalcheta.mp4" class="video" muted loop></video>
+        </div>
+        <a href="https://www.tiktok.com/@venus4o" target="_blank" class="tiktok-button">Visit My TikTok</a>
+    </section>
+
+
+    
+
+<script>
+    const videos = document.querySelectorAll('.video');
+    videos.forEach(video => {
+        video.addEventListener('mouseenter', () => video.play());
+        video.addEventListener('mouseleave', () => video.pause());
+    });
+</script>
+
+
+    <footer>
+        
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="works.html">Портфолио</a>
+        <a href="contacts.html">Контакти</a>
+        </nav>
+    </footer>
+</body>
+</html>
